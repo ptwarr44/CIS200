@@ -1,0 +1,7 @@
+C:\Users\Patrick\Documents\School\FA17\CIS200 - C#\Programs\Program0\Program0\bin\Debug\Program0.exe.config
+C:\Users\Patrick\Documents\School\FA17\CIS200 - C#\Programs\Program0\Program0\bin\Debug\Program0.exe
+C:\Users\Patrick\Documents\School\FA17\CIS200 - C#\Programs\Program0\Program0\bin\Debug\Program0.pdb
+C:\Users\Patrick\Documents\School\FA17\CIS200 - C#\Programs\Program0\Program0\obj\Debug\Program0.csprojResolveAssemblyReference.cache
+C:\Users\Patrick\Documents\School\FA17\CIS200 - C#\Programs\Program0\Program0\obj\Debug\Program0.csproj.CoreCompileInputs.cache
+C:\Users\Patrick\Documents\School\FA17\CIS200 - C#\Programs\Program0\Program0\obj\Debug\Program0.exe
+C:\Users\Patrick\Documents\School\FA17\CIS200 - C#\Programs\Program0\Program0\obj\Debug\Program0.pdb
