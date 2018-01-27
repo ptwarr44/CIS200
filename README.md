@@ -28,9 +28,9 @@ Program 3:  // This class creates the main GUI for Program 2. It provides a
             // I'd like to point out that I sent a letter to John Cleese via this program
             
 Program 4:  // File: TestParcels.cs
-            // This is a simple, console application designed to exercise the Parcel hierarchy.
+            // This is a simple, console application designed to exercise the Parcel hierarchy.
             // It creates several different Parcels and prints them.
-
-            // Added in 4 more address and 6 more parcels. 
+            
+           // Added in 4 more address and 6 more parcels. 
             // This program will first print the list as is, then in ascending order,
             // and lastly in descending order.
