@@ -1,0 +1,78 @@
+﻿// By: Patrick Warren
+// Program 4
+// CIS 200-76
+// Fall 2017
+// Due: 11/27/2017
+
+// File: Parcel.cs
+// Parcel serves as the abstract base class of the Parcel hierachy.
+
+// Added the functionality for the Parcels to be compared to each other.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+public abstract class Parcel : IComparable<Parcel>
+{
+    // Precondition:  None
+    // Postcondition: The parcel is created with the specified values for
+    //                origin address and destination address
+    public Parcel(Address originAddress, Address destAddress)
+    {
+        OriginAddress = originAddress;
+        DestinationAddress = destAddress;
+    }
+
+    public Address OriginAddress
+    {
+        // Precondition:  None
+        // Postcondition: The parcel's origin address has been returned
+        get;
+
+        // Precondition:  None
+        // Postcondition: The parcel's origin address has been set to the
+        //                specified value
+        set;
+    }
+
+    public Address DestinationAddress
+    {
+        // Precondition:  None
+        // Postcondition: The parcel's destination address has been returned
+        get;
+
+        // Precondition:  None
+        // Postcondition: The parcel's destination address has been set to the
+        //                specified value
+        set;
+    }
+
+    // Precondition:  None
+    // Postcondition: The parcel's cost has been returned
+    public abstract decimal CalcCost();
+
+    // Precondition:  None
+    // Postcondition: A String with the parcel's data has been returned
+    public override String ToString()
+    {
+        string NL = Environment.NewLine; // NewLine shortcut
+
+        return $"Origin Address:{NL}{OriginAddress}{NL}{NL}Destination Address:{NL}" +
+            $"{DestinationAddress}{NL}Cost: {CalcCost():C}";
+    }
+
+    //Precondition: None
+    //Postcondition:  When this < parcel, method returns negative #
+    //                When this == parcel, method returns zero
+    //                When this > parcel, method returns positive #
+    public int CompareTo(Parcel parcel)
+        {
+        //Return 1 if null, else return the calc cost
+        if (parcel == null)
+            return 1;
+        else
+            return this.CalcCost().CompareTo(parcel.CalcCost());
+        }
+}
